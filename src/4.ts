@@ -49,6 +49,7 @@ class MyHouse extends House {
   }
   openDoor(key: Key): void {
     if (key.getSignature() === this.key.getSignature()) {
+      this.door = true;
       console.log("Opening the door.");
     } else {
       console.log("Wrong key. Door remains closed.");
