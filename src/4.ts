@@ -9,7 +9,6 @@ class Key {
     return this.signature;
   }
 }
-export {};
 
 class Person {
   private key: Key;
@@ -65,3 +64,5 @@ const person = new Person(key);
 house.openDoor(person.getKey());
 
 house.comeIn(person);
+
+export {};
